@@ -236,7 +236,6 @@ async function run() {
     if (timeout) args.push(`--timeout=${timeout}`);
     if (repository) args.push('--repo=https://charts-ose.clearmatics.com');
     args.push('--debug');
-    args.push('--home=/root/.helm/')
     valueFiles.forEach(f => args.push(`--values=${f}`));
     args.push("--values=./values.yml");
 
